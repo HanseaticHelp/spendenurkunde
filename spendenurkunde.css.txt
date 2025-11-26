@@ -1,0 +1,131 @@
+/* ======================================
+   Hanseatic Help – Spendenurkunde
+   Pixelgenaue Typografie gemäß Vorgabe
+   ====================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    padding: 2cm;
+    color: #000;
+    max-width: 18cm;
+    margin: 0 auto;
+}
+
+/* ------------------------------
+   LOGO
+------------------------------- */
+
+.logo img {
+    max-width: 180px;
+    margin: 0 auto 30px auto;
+    display: block;
+}
+
+/* Produktbild entfernen */
+.product-image {
+    display: none !important;
+}
+
+/* ------------------------------
+   ÜBERSCHRIFT – "Spendenurkunde"
+------------------------------- */
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    font-weight: 700; /* Bold */
+    text-align: center;
+    margin-bottom: 40px;
+    color: #0A74BB;
+}
+
+/* ------------------------------
+   HAUPTBLOCK MIT:
+   - Empfänger
+   - Sender
+   - Produkt
+   - Betrag
+------------------------------- */
+
+.motif-teaser {
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+/* Empfänger */
+.motif-teaser strong:first-of-type {
+    /* Beispiel: Max Mustermann */
+    font-size: 24px;
+    font-weight: 500; /* Medium */
+}
+
+/* Produkt (z. B. "1x Isomatte") */
+.motif-teaser strong:last-of-type {
+    font-size: 24px;
+    font-weight: 500; /* Medium */
+}
+
+/* Sender + Betragssatz */
+.motif-teaser {
+    font-size: 15px;
+    font-weight: 300; /* Light */
+}
+
+/* ------------------------------
+   Botschaft ({{Deine Botschaft}})
+------------------------------- */
+
+.message {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300; /* Light */
+    margin: 30px auto;
+    padding: 10px 20px;
+    display: inline-block;
+    color: #000;
+}
+
+.message span {
+    color: #43C0E8;
+    font-weight: 400;
+}
+
+/* ------------------------------
+   Infotext zum Produkt
+   (z. B. "Von Kaltona nach Warmbeck...")
+------------------------------- */
+
+.motif-text {
+    font-size: 12px;
+    font-weight: 600; /* SemiBold */
+    line-height: 1.55;
+    margin: 25px 0 20px 0;
+}
+
+/* ------------------------------
+   Abschlusstext
+   (z. B. "Unsere Hilfe für andere...")
+------------------------------- */
+
+.project-info-text2 {
+    font-size: 12px;
+    font-weight: 300; /* Light */
+    line-height: 1.55;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #43C0E8;
+}
+
+/* ------------------------------
+   DRUCK-OPTIMIERUNG
+------------------------------- */
+
+@media print {
+    body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
