@@ -1,0 +1,131 @@
+/* 🧹 Reset: Alles von Twingle entfernen */
+body.type-giftshop, #page {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 794px !important; /* Twingle PDF width */
+    height: 1123px !important; /* Twingle PDF height */
+    background: #fff !important;
+    border: none !important;
+    box-shadow: none !important;
+    position: relative !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+#page {
+    border: none !important;
+}
+
+* {
+    box-shadow: none !important;
+    border: none !important;
+    background: none !important;
+}
+
+/* Bilder nicht von Twingle verkleinern lassen */
+img {
+    max-width: none !important;
+    height: auto !important;
+}
+
+/* 🧩 LOGO */
+.logo {
+    position: absolute !important;
+    left: 35px !important;
+    top: 34px !important;
+}
+.logo img {
+    width: 97px !important;
+    height: 93px !important;
+    object-fit: contain !important;
+}
+
+/* 🧩 HEADLINE „Spendenurkunde“ */
+h1 {
+    position: absolute !important;
+    top: 150px !important;
+    left: 31px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 50px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    color: #0A74BB !important;
+}
+
+/* 🖌️ Brush unter Überschrift */
+h1::after {
+    content: "" !important;
+    position: absolute !important;
+    width: 356px !important;
+    height: 52px !important;
+    left: -21px !important;
+    top: 46px !important;
+    transform: rotate(-2.57deg) !important;
+    background: url('https://raw.githubusercontent.com/HanseaticHelp/spendenurkunde/main/Brush.png')
+        no-repeat center/contain !important;
+}
+
+/* 🧩 OBERER TEXTBLOCK — EIN Absatz */
+.motif-text,
+.project-info-text2 {
+    position: absolute !important;
+    left: 176px !important;
+    top: 45px !important;
+    width: 384px !important;
+    color: #0A74BB !important;
+    font-size: 10px !important;
+    font-weight: 400 !important;
+    text-align: left !important;
+    line-height: 1.2 !important;
+}
+
+/* Zweites Element ausblenden – wir schreiben alles in das erste */
+.project-info-text2 {
+    display: none !important;
+}
+
+/* 🧩 DYNAMISCHER SPENDENTEXT */
+.motif-teaser {
+    position: absolute !important;
+    top: 277px !important;
+    left: 35px !important;
+    width: 361px !important;
+    font-size: 15px !important;
+    font-weight: 300 !important;
+    color: #0A74BB !important;
+    text-align: left !important;
+    line-height: 1.3 !important;
+}
+.motif-teaser strong {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    color: #0A74BB !important;
+}
+
+/* 🧩 PRODUKTBILD */
+.product-image {
+    position: absolute !important;
+    left: 348px !important;
+    top: 503px !important;
+}
+.product-image img {
+    width: 200px !important;
+    height: auto !important;
+    object-fit: contain !important;
+}
+
+/* 🧩 EIGENE BOTSCHAFT */
+.message {
+    position: absolute !important;
+    left: 32px !important;
+    top: 684px !important;
+    width: 299px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #0A74BB !important;
+    line-height: 1.3 !important;
+    text-align: left !important;
+}
+.message span {
+    display: none !important; /* Entfernt die Anführungszeichen */
+}
