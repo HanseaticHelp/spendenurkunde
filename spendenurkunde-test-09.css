@@ -1,0 +1,131 @@
+/* Global */
+body.type-giftshop {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  color: #0A74BB;
+  background: #fff;
+  position: relative;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+
+/* Logo */
+.logo {
+  position: absolute;
+  left: 35px;
+  top: 34px;
+}
+.logo img {
+  width: 97px;
+  height: 93px;
+  object-fit: contain;
+}
+
+
+/* Textblock oben (2 Absätze) */
+.motif-text {
+  position: absolute;
+  left: 176px;
+  top: 45px;
+  width: 384px;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #0A74BB;
+  font-weight: 600;
+}
+.project-info-text2 {
+  position: absolute;
+  left: 176px;
+  top: 90px;
+  width: 384px;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #0A74BB;
+}
+
+
+/* Headline */
+h1 {
+  position: absolute;
+  left: 31px;
+  top: 150px;
+  width: 468px;
+  margin: 0;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1;
+  color: #0A74BB;
+}
+
+
+/* Brush */
+h1::after {
+  content: "";
+  position: absolute;
+  left: -21px; /* Feintuning visuell mittig */
+  top: 46px;
+  width: 355.7px;
+  height: 51.66px;
+  background: url('https://raw.githubusercontent.com/HanseaticHelp/spendenurkunde/main/Brush.png')
+      no-repeat center/contain;
+  transform: rotate(-2.571deg);
+}
+
+
+/* Intro Text (Platzhalterblock) */
+.motif-teaser {
+  position: absolute;
+  top: 277px;
+  left: 35px;
+  width: 361px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #0A74BB;
+  line-height: 1.3;
+  text-align: left;
+}
+
+
+/* Produkt-Zeile */
+.motif-teaser strong {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+/* Produktbild */
+.product-image {
+  position: absolute;
+  left: 348px;
+  top: 503px;
+}
+.product-image img {
+  width: 199.645px;
+  height: 150.382px;
+  object-fit: contain;
+}
+
+
+/* Eigene Botschaft */
+.message {
+  position: absolute;
+  left: 32px;
+  top: 684px;
+  width: 299px;
+  font-size: 14.229px;
+  font-weight: 500;
+  color: #0A74BB;
+  line-height: 1.3;
+  text-align: left;
+}
+.message span { /* Remove weird quotes style */
+  display: none;
+}
